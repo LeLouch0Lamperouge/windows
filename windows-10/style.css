@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: "CustomFont";
+    src: url("fonts/segmdl2.ttf") format("ttf"),
+    }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+.taskbar {
+    height: 7%;
+    background-color: #243A43;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.time {
+    float: right;
+    margin: 0px 01px 0 54.5px;
+    padding: 8px 2px;
+    font-size: 11px;
+    font-weight: 500;
+    cursor: default;
+    color: lightgray;
+}
+
+.time:hover {
+    background-color: #516169;
+}
+
+.lang {
+    float: right;
+    color: lightgray;
+    padding: 14px 6px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    margin: 0px -54px;
+}
+
+.lang:hover {
+    background-color: #516169;
+}
+
+.clock {
+    text-align: center;
+}
+
+.users {
+    width: 50px;
+    height: 50px;
+}
+
+.icon {
+    position: absolute;
+    text-align: center;
+}
+
+.user {
+    margin-top: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+}
+
+.pc,.network,.bin,.panel,.vscode {
+    margin-top: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+}
+
+.user:hover,.pc:hover,.network:hover,.bin:hover,.panel:hover,.vscode:hover {
+    background-color: #93B5CD;
+}
+
+.vscode {
+    margin-top: 19px;
+}
+
+.vcode {
+    width: 100%;
+    height: 93%;
+    position: absolute;
+}
+
+.vfram {
+    width: 100%;
+    height: 94%;
+    position: relative;
+    display: contents;
+}
+
+.vsicode {
+    width: 26px;
+    height: 26px;
+}
+
+.vs-icon {
+    float: left;
+    color: #fff;
+    position: relative;
+    padding: 7px 11px;
+    background-color: #516169;
+    display: none;
+}
+
+[class^="ico-"], [class*=" ico-"]{
+    font: normal 1em/1 Arial, sans-serif;
+    display: inline-block;
+  }
+  
+  
+  .ico-times:before{ content: "\2716"; }
+  i.ico-times {
+    color: #fff;
+    float: right;
+    padding: 1px 10px 0 0;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8px 6px 9px 16px;
+}
+
+.close:hover {
+    background-color: red;
+}
+
+.resize {
+    margin-right: 4px;
+    right: 42px;
+    top: 0px;
+    padding: 5px 0px 9px 16px;
+    position: fixed;
+}
+
+.resize:hover,.minus:hover {
+    background-color: #516169;
+}
+
+i.far.fa-window-restore {
+    color: #fff;
+    float: right;
+    padding: 6px 20px 0px 0px;
+    font-size: 12px;
+}
+
+.minus {
+    margin-right: 4px;
+    right: 96px;
+    top: 0px;
+    padding: 9px 16px 9px 16px;
+    position: fixed;
+}
+
+i.fas.fa-minus {
+    color: #fff;
+    float: right;
+    padding: 3px 0px 0px 0px;
+    font-size: 12px;
+}
+
+
+.titlebar {
+    height: 5%;
+    padding: 7px 0 0 10px;
+    background-color: #323233;
+    top: 0;
+    position: relative;
+}
+
+.framimg {
+    width: 15px;
+    height: 15px;
+}
+
+.framvs {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 95%;
+}
+
+.vsfram {
+    position: absolute;
+    top: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    font-size: 12px;
+    text-align: center;
+    color: beige;
+}
+
+.ticon {
+    float: right;
+    margin-right: -18px;
+    display: inline-flex;
+}
+
+.setting {
+    width: 30px;
+    height: 30px;
+}
+
+.setting {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 9px;
+}
+
+.winico {
+    font-size: 20px;
+    float: left;
+    color: #fff;
+    position: relative;
+    padding: 11px 15px;
+}
+
+.winico:hover {
+    color: #0078D7;
+    background-color: #516169;
+    transition: 0.5ms;
+}
+
+.taskico {
+    width: 17px;
+    height: 17px;
+    margin: 12px 3px 3px 3px;
+}
+
+.net:hover,.sound:hover {
+    background-color: #516169;
+}
+
+.search {
+    font-size: 15px;
+    width: 25.3%;
+    float: left;
+    color: #F2F2F2;
+    position: relative;
+    padding: 11px 15px;
+}
+
+.search {
+    width: 25.2%;
+    font-size: 14.4px;
+    float: left;
+    color: #000;
+    background-color: #f2f2f2;
+    list-style: none;
+    border-top: 2px solid #c2c2c2;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: unset;
+    padding: 13.5px 11.5px 11.5px 40.5px;
+    outline: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+::placeholder {
+        
+    /* Firefox, Chrome, Opera */
+    color: #2b2b2b;
+}
+  
+:-ms-input-placeholder {
+    
+    /* Internet Explorer 10-11 */
+    color: #2b2b2b;
+}
+  
+::-ms-input-placeholder {
+    
+    /* Microsoft Edge */
+    color: #2b2b2b;
+}
+
+.not {
+    float: right;
+    margin: 0px 13px 0 0;
+    padding: 8px 11.5px;
+    font-size: 23px;
+    cursor: default;
+    color: lightgray;
+}
+
+.not:hover {
+    background-color: #516169;
+}
+
+.startico {
+    position: relative;
+}
+
+.cortana {
+    font-size: 15px;
+    float: left;
+    color: #fff;
+    position: relative;
+    padding: 14px 17px;
+}
+
+.cortana:hover {
+    background-color: #516169;
+    transition: 0.5ms;
+}
+
+#clos {
+    margin-left: 50px;
+}
+
+#mar1 {
+    margin-left: 1px;
+}
+
+#mar2 {
+    margin-left: 1px;
+}
+
+#mar3 {
+    margin-left: 1px;
+}
+
+#net {
+    margin-right: 1px;
+}
+
+.menu-icon {
+    float: left;
+    color: #fff;
+    position: relative;
+    padding: 7px 11px;
+}
+
+.edge {
+    width: 26px;
+    height: 26px;
+}
+
+.explorer {
+    width: 26px;
+    height: 26px;
+}
+
+.menu-icon:hover {
+    background-color: #516169;
+    transition: 0.5ms;
+}
+
+.store {
+    width: 26px;
+    height: 26px;
+}
+
+.net,.sound,.arrow {
+    padding: 1px 0px 7px 0px;
+}
+
+.notif {
+    width: 17px;
+    height: 17px;
+}
+
+.start-menu {
+    height: 80%;
+    background-color: #243A43;
+    width: 50%;
+    position: absolute;
+    bottom: 44px;
+    transform: translateX(-1000px);
+    transition-duration: 0.6s;
+    z-index: 1000;
+}
+
+.powers {
+    font-size: 20px;
+    float: left;
+    color: #fff;
+    padding: 15px 15px;
+    bottom: 0;
+    position: absolute;
+}
+
+.settings {
+    font-size: 20px;
+    float: left;
+    color: #fff;
+    padding: 15px 15px;
+    bottom: 50px;
+    position: absolute;
+}
+
+.pict {
+    font-size: 20px;
+    float: left;
+    color: #fff;
+    padding: 15px 15px;
+    bottom: 100px;
+    position: absolute;
+}
+
+.dock {
+    font-size: 20px;
+    float: left;
+    color: #fff;
+    padding: 15px 17px;
+    bottom: 150px;
+    position: absolute;
+}
+
+.profiles {
+    font-size: 20px;
+    float: left;
+    color: #fff;
+    padding: 15px 17px;
+    bottom: 200px;
+    position: absolute;
+}
+
+.bars {
+    font-size: 20px;
+    float: left;
+    color: #fff;
+    padding: 15px 17px;
+    position: absolute;
+}
+
+.powers:hover,.settings:hover,.pict:hover,.dock:hover,.profiles:hover,.bars:hover {
+    background-color: #516169;
+    transition: 0.5ms;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background: #fff;
+    display: block;
+}
+
+.listmenu {
+    position: absolute;
+    display: flex;
+    list-style: none;
+    padding: 25px 0 0 0;
+    float: left;
+}
+
+.listmenu li {
+    margin-left: 20px;
+}
+
+.listmenu .active {
+    background-color: #0066B4;
+    color: #fff;
+    padding: 4px 20px;
+    margin-left: 0;
+}
+
+@media only screen and (max-width: 660px) {
+
+    #clos {
+        margin: 0;
+    }
+    .vscode {
+        margin-top: 0;
+        position: absolute;
+        top: 8px;
+        left: 90px;
+        width: 75px;
+        padding: 0;
+    }
+
+}
+
+@media only screen and (max-width: 595px) {
+    .search-bar {
+        display: none;
+    }
+    #clos {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .start-menu {
+        bottom: 90px;
+    }
+    .taskbar {
+        height: 16%;
+        background-color: #243A43;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+    .pc, .network, .bin, .panel {
+        margin-top: 25px;
+    }
+}
