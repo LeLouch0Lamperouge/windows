@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 10</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/268361e16f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="icon">
+            <div class="user" >
+                <img src="ico/user.ico" alt="" class="users">
+                <p class="text">LoLoch</p>
+            </div>
+            <div class="pc">
+                <img src="ico/pc.ico" alt="" class="users">
+                <p class="text">This PC</p>
+            </div>
+            <div class="network">
+                <img src="ico/network.ico" alt="" class="users">
+                <p class="text">Network</p>
+            </div>
+            <div class="bin">
+                <img src="ico/bin.ico" alt=""  class="users">
+                <p class="text">Recycle Bin</p>
+            </div>
+            <div class="panel">
+                <img src="ico/panel.ico" alt=""  class="users">
+                <p class="text">Control</p>
+                <p class="text">Panel</p>
+            </div>
+            <div class="vscode" onclick="vsopen()">
+                <img src="ico/vscode.ico" alt="" class="users">
+                <p class="text">Visual Studio</p>
+                <p class="text">Code</p>
+            </div>
+        </div>
+
+        <div class="this-pc" style="display: none;">
+            <div class="header">
+                <div class="headico">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="chooses">
+                    <ul class="listmenu">
+                        <li class="active">File</li>
+                        <li>Computer</li>
+                        <li>View</li>
+                        <li>Drive Tools</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="start-menu" id="start-menu">
+            <div class="power">
+                <i class="fas fa-power-off powers"></i>
+            </div>
+            <div class="seting">
+                <i class="fas fa-cog settings"></i>
+            </div>
+            <div class="pic">
+                <i class="fas fa-image pict"></i>
+            </div>
+            <div class="doc">
+                <i class="far fa-file dock"></i>
+            </div>
+            <div class="profile">
+                <i class="fas fa-user-circle profiles"></i>
+            </div>
+            <div class="bar">
+                <i class="fas fa-bars bars"></i>
+            </div>
+        </div>
+
+        <div class="vcode" id="vcode" style="display: none;">
+            <div class="titlebar">
+                <img src="ico/vscode.ico" alt="" class="framimg">
+                <div class="close" onclick="vsclose()">
+                    <i class="ico-times" role="img" aria-label="Cancel"></i>
+                </div>
+                <div class="resize">
+                    <i class="far fa-window-restore"></i>
+                </div>
+                <div class="minus" onclick="vsminusclose()">
+                    <i class="fas fa-minus"></i>
+                </div>
+            </div>
+            <div class="framvs">
+                <iframe class="vsfram" src="https://vscode.dev/"></iframe>
+            </div>
+        </div>
+
+        <div class="taskbar" >
+            <div class="not">
+                <img src="ico/noti.ico" alt="" class="notif">
+            </div>
+            <div class="time">
+                <div class="clock" id="clock">
+                    3:20 pm
+                </div>
+                <div class="date" id="currentDate">
+                    12/21/2022
+                </div>
+                <div class="volume">
+                    <i class="lni lni-volume-high"></i>
+                </div>
+            </div>
+            <div class="lang">ENG</div>
+            <div class="ticon">
+
+                <div class="net" id="net">
+                    <img src="ico/net.ico" alt="" class="taskico">
+                </div>
+                <div class="sound">
+                    <img src="ico/sound.ico" alt="" class="taskico">
+                </div>
+            </div>
+            <div class="straticon">
+                <div class="startico">
+                    <div class="smenu">
+                        <i class="fab fa-windows winico" id="windowsopen" onclick="start_menubar()"></i>
+                        <i class="fab fa-windows winico windowsclose" style="display: none;" id="windowsclose" onclick="close_menubar()"></i>
+                    </div>
+                    <div class="search-bar">
+                        <input type="search" class="search" placeholder="Type here to search">
+                    </div>
+                    <div class="cortana-menu">
+                        <i class="far fa-circle cortana"></i>
+                    </div>
+                    <div class="menu-icon" id="clos">
+                        <img src="ico/edge.ico" alt="" class="edge">
+                    </div>
+                    <div class="menu-icon" id="mar1">
+                        <img src="ico/explorer.ico" alt="" class="explorer">
+                    </div>
+                    <div class="menu-icon" id="mar3">
+                        <img src="ico/store.png" alt="" class="store">
+                    </div>
+                    <div class="vs-icon" id="mar2" onclick="vsminusopen()">
+                        <img src="ico/vscode.ico" alt="" class="vsicode" id="vsicode">
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+
+    <script src="js/clock.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/start-menu.js"></script>
+
+</body>
+</html>
